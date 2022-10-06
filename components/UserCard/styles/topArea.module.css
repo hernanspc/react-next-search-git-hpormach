@@ -1,0 +1,91 @@
+.Info {
+    display: flex;
+    align-items: center;
+}
+
+.Bio {
+    color: #697C9A;
+    font-size: 1.4rem;
+    line-height: 192%;
+    margin: 3.3rem 0 2.3rem;
+}
+
+.Pfp {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.SideInfo {
+    display: grid;
+}
+
+.Name {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    color: "#2B3442",
+}
+
+.Username {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #0079ff;
+    margin-bottom: 0.6rem;
+}
+
+.JoinedAt {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: "#697C9A",
+}
+
+@media (min-width: 768px) {
+    .Bio {
+        margin: 2.2rem 0 3.3rem;
+        font-size: 1.6rem;
+    }
+
+    .Pfp {
+        width: 117px;
+        height: 117px;
+        margin-right: 4.1rem;
+    }
+
+    .Name {
+        font-size: 2.7rem;
+    }
+
+    .Username {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .JoinedAt {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .Pfp {
+        display: none;
+    }
+
+    .SideInfo {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .JoinedAt {
+        grid-column: 2 /3;
+        grid-row: 1 /2;
+        justify-self: end;
+    }
+}
+
+.span:last-of-type {
+    grid-column: 2 /3;
+    grid-row: 1 /2;
+    justify-self: end;
+}
